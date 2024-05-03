@@ -6,7 +6,8 @@ Interactive Element Ideas:
 
 Here are some ideas to get you started:
 
-Color Changing Text: Create a text element that changes color when the user hovers their mouse over it (mouseover event). Let it change back to the original color when the mouse leaves (mouseout event).
+Color Changing Text: Create a text element that changes color when the user hovers their mouse over it (mouseover event). 
+Let it change back to the original color when the mouse leaves (mouseout event).
 
 Image Swap: Display an image on the page. When the user clicks on the image (click event), swap it with another image.
 
