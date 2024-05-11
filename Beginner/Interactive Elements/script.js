@@ -1,6 +1,6 @@
 const colored_text=document.querySelector('.text_color');
 const image=document.querySelector('.cat-img');
-
+const submitBtn=document.querySelector('.submit_btn');
 //text color change
 colored_text.addEventListener('mouseover',()=>{
     colored_text.style.color='lightblue';
@@ -24,3 +24,24 @@ image.addEventListener('click',()=>{
     },500)
 }
 )
+
+//List Element
+function addItemsToList(){
+    input_elem=document.getElementById('input_field');
+    input_data=input_elem.value.trim();
+    
+    if (input_data=="") return ;
+    //create a new list item
+    const listItem=document.createElement('li');
+    listItem.textContent=input_data;
+    listItem.classList.add('items');
+
+    //appending the new list
+
+    const listContainer=document.querySelector('.list-items');
+    listContainer.appendChild(listItem);
+    
+    //clearing the input value
+    input_elem.value="";
+}
+submitBtn.addEventListener('click',addItemsToList);
